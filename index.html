@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+
+      /* font */
+      @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+  /* Reset  */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    font-size: 10px;
+
+    /* primary  */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%):
+/* ## Neutral */
+    --dark-grayish: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    font-family: "League Spartan", sans-serif;
+  }
+
+  body {
+    font-size: 1.5rem;
+    font-family: "League Spartan", sans-serif;
+  }
+
+  main {
+    display: grid;
+    margin: 0 auto;
+    max-width: 120rem;
+    align-content: center;
+    height: 100vh;
+  }
+
+  main h2 {
+    color: var(--very-dark-magenta);
+  }
+
+  main p {
+    color: var(--light-grayish-magenta);
+  }
+
+  section.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  section.grid-review-group {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "a a a b b b c c c c c c"
+    "a a a b b b c c c c c c"
+    "a a a b b b c c c c c c";
+  }
+
+  .intro-flex-group-item-a {
+    grid-area: "a";
+  }
+
+  .intro-flex-group-item-b {
+    grid-area: "b";
+  }
+
+  .intro-flex-group-item-c {
+    grid-area: "c";
+  }
+
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="intro">
+        <div class="intro-main">
+          <h2>
+      10,000+ of our users love our products.
+          </h2>
+          <p>      We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.</p>
+    </div>
+    <div class="intro-flex-group">
+      <article class="intro-flex-group-item-a"><span class="intro-flex-group--stars"></span>Rated 5 Stars in Reviews</article>
+      <article class="intro-flex-group-item-b"><span class="intro-flex-group--stars"></span>Rated 5 Stars in Report Guru</article>
+      <article class="intro-flex-group-item-c"><span class="intro-flex-group--stars"></span>Rated 5 Stars in Best Tech</article>
+    </div>
+    </section>
+    <section class="grid-review-group">
+      <article>
+        <h3>
+          Colton Smith 
+        </h3>
+        <h4 class="grid-review-group--buyer"> Verified Buyer </h4>
+        <blockquote>
+          "We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"
+        </blockquote>
+      </article>
+      <article>
+        <h3>
+          Irene Roberts 
+        </h3>
+        <h4 class="grid-review-group--buyer"> Verified Buyer </h4>
+     <blockquote> "Customer service is always excellent and very quick turn around. Completely
+      delighted with the simplicity of the purchase and the speed of delivery."</blockquote>
+      </article>
+      <article>
+        <h3>
+          Anne Wallace 
+        </h3>
+        <h4 class="grid-review-group--buyer"> Verified Buyer </h4>
+        <blockquote> "Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"</blockquote>
+       
+      </article>
+    </section>
+    </main>
+  </body>
+</html>
